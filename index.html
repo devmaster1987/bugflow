@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BugFlow - Issue Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+    <div class="logo">
+        🐛 BugFlow
+    </div>
+
+
+    <nav>
+
+        <button class="nav-link active">
+            📊 Dashboard
+        </button>
+
+        <button class="nav-link">
+            🐞 Bugs
+        </button>
+
+        <button class="nav-link">
+            📋 Board
+        </button>
+
+        <button class="nav-link">
+            📈 Analytics
+        </button>
+
+        <button class="nav-link">
+            👨‍💻 Developers
+        </button>
+
+        <button class="nav-link">
+            ⚙ Settings
+        </button>
+
+    </nav>
+
+
+
+    <div class="profile-box">
+
+        <div class="avatar">
+            D-M
+        </div>
+
+        <div>
+            <strong>
+                Dev Master
+            </strong>
+
+            <p>
+                Developer
+            </p>
+        </div>
+
+    </div>
+
+
+</aside>
+
+
+
+
+
+<!-- MAIN CONTENT -->
+
+
+<main class="main">
+
+
+<header class="header">
+
+
+<div>
+
+<h1>
+Bug Dashboard
+</h1>
+
+<p>
+Track, manage and resolve software issues.
+</p>
+
+</div>
+
+
+
+<button class="create-btn">
++ Create Bug
+</button>
+
+
+</header>
+
+
+
+
+
+
+<!-- STATS -->
+
+
+<section class="stats">
+
+
+<div class="stat-card">
+
+<span>
+Total Bugs
+</span>
+
+<h2>
+124
+</h2>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<span>
+Open
+</span>
+
+<h2>
+34
+</h2>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<span>
+In Progress
+</span>
+
+<h2>
+18
+</h2>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<span>
+Resolved
+</span>
+
+<h2>
+72
+</h2>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CREATE BUG FORM -->
+
+
+<section class="bug-form">
+
+
+<h2>
+Create New Bug
+</h2>
+
+
+<div class="form-grid">
+
+
+<input 
+type="text"
+placeholder="Bug title"
+id="bugTitle"
+>
+
+
+
+<textarea
+placeholder="Bug description"
+id="bugDescription">
+</textarea>
+
+
+
+<select id="priority">
+
+<option>
+Critical
+</option>
+
+<option>
+High
+</option>
+
+<option>
+Medium
+</option>
+
+<option>
+Low
+</option>
+
+</select>
+
+
+
+<select id="category">
+
+<option>
+Frontend
+</option>
+
+<option>
+Backend
+</option>
+
+<option>
+UI/UX
+</option>
+
+<option>
+Performance
+</option>
+
+<option>
+Security
+</option>
+
+</select>
+
+
+
+<select id="assignee">
+
+<option>
+Dev Master
+</option>
+
+<option>
+Developer 2
+</option>
+
+<option>
+Developer 3
+</option>
+
+</select>
+
+
+
+</div>
+
+
+
+<button class="submit-btn">
+Create Issue
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- KANBAN -->
+
+
+<section class="board">
+
+
+<h2>
+Issue Workflow
+</h2>
+
+
+
+<div class="kanban">
+
+
+
+
+
+<div class="column">
+
+
+<h3>
+Backlog
+</h3>
+
+
+<div class="bug-card">
+
+
+<span class="priority high">
+High
+</span>
+
+
+<h4>
+Checkout page crash
+</h4>
+
+
+<p>
+Payment fails after clicking submit.
+</p>
+
+
+<footer>
+
+#102
+
+</footer>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="column">
+
+
+<h3>
+Todo
+</h3>
+
+
+<div class="bug-card">
+
+
+<span class="priority medium">
+Medium
+</span>
+
+
+<h4>
+Navbar responsive issue
+</h4>
+
+
+<p>
+Mobile menu overlaps content.
+</p>
+
+
+<footer>
+
+#103
+
+</footer>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="column">
+
+
+<h3>
+In Progress
+</h3>
+
+
+<div class="bug-card">
+
+
+<span class="priority critical">
+Critical
+</span>
+
+
+<h4>
+Database connection error
+</h4>
+
+
+<p>
+Server disconnects randomly.
+</p>
+
+
+<footer>
+
+#104
+
+</footer>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="column">
+
+
+<h3>
+Done
+</h3>
+
+
+<div class="bug-card">
+
+
+<span class="priority low">
+Low
+</span>
+
+
+<h4>
+Image loading issue
+</h4>
+
+
+<p>
+Optimized image rendering.
+</p>
+
+
+<footer>
+
+#101
+
+</footer>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ANALYTICS -->
+
+
+<section class="analytics">
+
+
+<h2>
+Bug Analytics
+</h2>
+
+
+<div class="analytics-grid">
+
+
+
+<div class="chart-card">
+
+
+<h3>
+Bug Categories
+</h3>
+
+
+<div class="bar">
+
+Frontend
+
+<span style="width:80%">
+</span>
+
+</div>
+
+
+
+<div class="bar">
+
+Backend
+
+<span style="width:60%">
+</span>
+
+</div>
+
+
+
+<div class="bar">
+
+UI/UX
+
+<span style="width:45%">
+</span>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="chart-card">
+
+
+<h3>
+Developer Activity
+</h3>
+
+
+<ul>
+
+
+<li>
+Dev Master fixed 43 bugs
+</li>
+
+
+<li>
+Ali fixed 28 bugs
+</li>
+
+
+<li>
+Ahmed fixed 21 bugs
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ACTIVITY -->
+
+
+<section class="activity">
+
+
+<h2>
+Recent Activity
+</h2>
+
+
+
+<div class="activity-item">
+
+🐛 Bug #104 moved to Testing
+
+</div>
+
+
+<div class="activity-item">
+
+✅ Bug #101 resolved
+
+</div>
+
+
+<div class="activity-item">
+
+🔥 Critical issue created
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
